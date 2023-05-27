@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Mali', cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration:none;
+}
+
+p {
+    line-height:1.51em;
+}
+
+.wrap {
+    width:1290px;
+    margin:0 auto;
+    letter-spacing:-0.5px;
+    padding:15px;
+}
+
+.tabmenu {
+    position:relative;
+}
+
+.tabmenu .list {
+    overflow:hidden;
+}
+
+.tabmenu .list li {
+    float:left;
+    display:inline-block;
+    width:150px;
+    height:50px;
+    background-color:#DCE2F0;
+    line-height:50px;
+    text-align:center;
+    font-size:16pt;
+    border-bottom:2px solid #DCE2F0;
+}
+
+.tabmenu .list li.focus {
+    border-bottom:2px solid #50586C;
+}
+
+.tabmenu .list li.focus .btn {
+    font-weight:bold;
+}
+
+.tabmenu .list li.focus a:before{
+    content:'\f005';
+    font-family:FontAwesome;
+}
+
+.tabmenu .list li .btn {
+    color:#50586C;
+}
+
+.tabmenu .content .cont {
+    display:none;
+    position:absolute;
+    left:0;
+    background-color:#50586C;
+    color:#DCE2F0;
+    width:1290px;
+    padding:20px;
+    font-size:14pt;
+}

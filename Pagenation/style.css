@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DungGeunMo';
+    font-size: 14pt;
+    color: #234E70;
+}
+
+.wrapper {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+#article-title {
+    margin: 15px auto;
+    background-color: #FBF8BE;
+    border: 1px solid #234E70;
+}
+
+#article-title .btn-primary {
+    background-color: #234E70;
+    color: #FBF8BE;
+    border: none;
+}
+
+.content-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    height: 580px;
+}
+
+.col-sm-6 {
+    width: 100% !important;
+}
+
+#contents {
+    background-color: #234E70;
+    color: #FBF8BE;
+}
+
+#contents .card-title,
+#contents .card-text {
+    color: #FBF8BE;
+}
+
+#contents .btn-primary {
+    background-color: #FBF8BE;
+    color: #234E70;
+    border: none;
+}
+
+.buttons {
+    text-align: center;
+    width: 100%;
+    margin: 15px auto;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    color: #234E70;
+    width: 50px;
+}
+
+.active {
+    background-color: #234E70;
+    color: #FBF8BE;
+}

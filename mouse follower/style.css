@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'EarlyFontDiary';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'EarlyFontDiary';
+}
+
+p {
+    font-size:25pt;
+    text-align:center;
+    height:50%;
+}
+
+.mousefollow {
+    position:absolute;
+    left:0;
+    right:0;
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    background-color:blueviolet;
+    transition: all 0.5s ease-out;
+}

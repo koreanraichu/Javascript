@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Goyang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Goyang';
+    color:#2C3333;
+    background-color:#E7F6F2;
+}
+
+h1, h2 {
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.prev, .next {
+    text-align: center;
+    font-size:60pt;
+}
+
+button {
+    border:none;
+}
+
+button:disabled > i {
+    color:#A5C9CA;
+}
+
+.wrap {
+    width: 1280px;
+    margin:0 auto;
+}
+
+.container {
+    width:1280px;
+    display: grid;
+    grid-template-columns: auto 960px auto;
+    align-items: center;
+}
+
+.slider {
+    width:960px;
+    overflow:hidden;
+}
+
+img {
+    width:960px;
+}
+
+.image {
+    display:flex;
+    position:relative;
+    transition: all 1s;
+}
+
+.bar {
+    grid-column: 2 / span 1;
+    text-align:center;
+    margin: 20px auto 0 auto;
+    display:flex;
+}
+
+.bar div {
+    width:20px;
+    height:20px;
+    background-color:#A5C9CA;
+    margin: 0 10px 0 15px;
+    border-radius:15px;
+    transition: all 0.5s;
+}
+
+.bar .activate {
+    background-color:#2C3333;
+}

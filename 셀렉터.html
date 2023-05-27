@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>제목 뭘로하지</title>
+    <style>
+        .pTag {
+            color: navy;
+            font-size: 15pt;
+            text-decoration:underline;
+        }
+    </style>
+    <script>
+        let pTagcount = 1;
+        function create_P() {
+            let tagArea = document.getElementById('tagarea');
+            let new_pTag = document.createElement('p');
+
+            new_pTag.setAttribute('class', 'pTag');
+            new_pTag.innerHTML = pTagcount + ". 추가된 p태그";
+
+            tagArea.appendChild(new_pTag);
+
+            pTagcount += 1;
+        }
+        function delete_P() {
+            let tagArea = document.getElementById('tagarea');
+            let pTag_area = tagArea.childNodes;
+            console.log(pTag_area)
+
+            if (pTagcount < 1) {
+                alert('삭제할 태그가 없습니다!');
+            }
+            else {
+                tagArea.removeChild(pTag_area[0]);
+                pTagcount -= 1;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+<div id = "tagarea">
+</div>
+<input type="button" value="add_pTag" onclick="create_P();">
+<input type="button" value="delete_pTag" onclick="delete_P();">
+</body>
+
+</html>

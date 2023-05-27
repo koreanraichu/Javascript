@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+* {
+    font-family: 'Gaegu', cursive;
+}
+
+.container {
+    width:972px;
+    margin:0 auto;
+}
+
+.text{
+    text-align:center;
+    font-size:13pt;
+}
+
+h1 {
+    text-align:center;
+}
+
+.slider {
+    height:600px;
+    width:972px;
+    overflow:hidden; /*한 장만 보여주기 위해 필요*/
+}
+
+.image {
+    position:relative;
+    display:flex;
+    height:600px;
+}
+
+img {
+    width:972px;
+    height:600px;
+}
+
+button, button:active, button:focus {
+    width:100px;
+    height:45px;
+    font-size:16pt;
+    border:1px dotted #00498c;
+    color:#00498c;
+    background-color:white;
+    outline:none;
+}
+
+button:hover {
+    background-color:#00498c;
+    color:white
+}
+
+button:disabled {
+    border:1px dotted gray;
+    color:gray;
+}
+
+button:disabled:hover {
+    background-color:gray;
+    color:white;
+}
+
+.prev {
+    float:left;
+}
+
+.next {
+    float:right;
+}
