@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <title>스칼렛/바이올렛 뭐 살지 고민되면 해보십셔</title>
+</head>
+
+<body>
+    <div>
+        <h2>다음 선택지를 하나씩 골라보세요. </h2>
+        <p>어떤 색을 좋아하세요?</p>
+        <label onclick=colorChange()>
+            <input class="scarlet" type="radio" name="color" value="scarlet"><span>빨강</span>
+        </label>
+        <label>
+            <input class="violet" type="radio" name="color" value="violet"><span>보라</span>
+        </label>
+        <p>과거와 미래 중 어떤 테마를 더 좋아하시나요? </p>
+        <label>
+            <input class="scarlet" type="radio" name="time" value="scarlet"><span>과거</span>
+        </label>
+        <label>
+            <input class="violet" type="radio" name="time" value="violet"><span>미래</span>
+        </label>
+        <p>박사는 남캐 vs 여캐? </p>
+        <label>
+            <input class="scarlet" type="radio" name="professor" value="scarlet"><span>여캐</span>
+        </label>
+        <label>
+            <input class="violet" type="radio" name="professor" value="violet"><span>남캐</span>
+        </label>
+        <p>당신이 타고 싶은 오토바이는?</p>
+        <label>
+            <input class="scarlet" type="radio" name="vehicle" value="scarlet"><span>발로 뛰는 오토바이(발바닥에 젤리 있음)</span>
+        </label>
+        <label>
+            <input class="violet" type="radio" name="vehicle" value="violet"><span>강입자 엔진 호버링 오토바이</span>
+        </label>
+        <p>아래 600족 중 직접 잡고 싶은 포켓몬은?(최종진화체 기준)</p>
+        <label>
+            <input class="scarlet" type="radio" name="pokemon" value="scarlet"><span>삼삼드래&마기라스</span>
+        </label>
+        <label>
+            <input class="violet" type="radio" name="pokemon" value="violet"><span>보만다&드래펄트</span>
+        </label>
+    </div>
+    <button onclick=result()>결과보기</button>
+    <div id="result">
+        <h2>결과는? 두구두구</h2>
+        <p id="result_text">두구두구</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
