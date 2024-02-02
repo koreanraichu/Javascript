@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #50586C;
+    --sub-color: #DCE2F0;
+    --black: #000;
+    --white: #fff;
+}
+
+html {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'omyu_pretty';
+    color: var(--main-color);
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--black);
+}
+
+p {
+    font-size: 14pt;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type=text] {
+    font-family: 'omyu_pretty';
+    font-size: 14pt;
+    width: 200px;
+    height: 33px;
+    border: 2px dotted var(--main-color);
+    margin: 10px;
+}
+
+input[type=checkbox] {
+    margin-left: 10px;
+    accent-color: var(--main-color);
+    width: 15px;
+}
+
+button {
+    font-family: 'omyu_pretty';
+    font-size: 14pt;
+    width: 100px;
+    height: 33px;
+    line-height: 1.5em;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--sub-color);
+    margin: 10px;
+}
+
+.id {
+    border: 2px dotted var(--sub-color);
+}
+
+.input, .check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.check {
+    justify-content: center;
+}
