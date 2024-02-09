@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'IM_Hyemin-Bold';
+}
+
+.wrap {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.page {
+    width: 90%;
+    margin: 20px auto 0px auto;
+    background-color: #E5E4E2;
+    color: #231F20;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+label {
+    margin-left: 10px;
+    font-size: 14pt;
+}
+
+input[type=radio] {
+    width: 15px;
+    accent-color: #231F20;
+}
+
+.vandyke {
+    color: #44362F;
+    background-color: #FFE8D2;
+}
+
+.prussian {
+    color: #003153;
+    background-color: #DBF2FF;
+}
+
+.viridian {
+    color: 	#40826D;
+    background-color: #DDECE0;
+}
+
+.ultraviolet {
+    color: 	#5f4b8b;
+    background-color: #FDF7FF;
+}
