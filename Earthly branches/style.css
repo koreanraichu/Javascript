@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'TTHakgyoansimDotbogiR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimDotbogiR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'TTHakgyoansimDotbogiR';
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
