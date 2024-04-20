@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Freesentation-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Freesentation-9Black';
+    font-size: 16pt;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.dropdown-main {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-bar {
+    display: inline-flex;
+    align-items: center;
+    font-size: 20pt;
+    padding: 5px;
+}
+
+.dropdown-contents {
+    margin-top:5px;
+    position: absolute;
+    display: none;
+    background: linear-gradient(to bottom, #f7cac9, #91a8d1);
+    border-radius: 5%;
+    animation: fade-in 1s ease;
+    width: 136px;
+}
+
+.dropdown-contents a {
+    text-align: left;
+    text-decoration: none;
+    color: #5f4b8b;
+    display: block;
+    font-size: 16pt;
+    padding: 5px;
+}
+
+@keyframes fade-in { /* 얘는 애니메이션 관련인듯...*/
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
