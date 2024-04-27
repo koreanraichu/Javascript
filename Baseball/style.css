@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'KyoboHandwriting2023wsa';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404-2@1.0/KyoboHandwriting2023wsa.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #343148;
+    --sub-color: #D7C49E;
+    --red: #cc0000;
+    --green: #046307;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'KyoboHandwriting2023wsa';
+    color: var(--main-color);
+}
+
+div div {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    width:960px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 14pt;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+input[type="text"] {
+    font-family: 'KyoboHandwriting2023wsa';
+    font-size: 14pt;
+    border: 2px dotted var(--main-color);
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+    background-color: var(--white);
+}
+
+button {
+    font-family: 'KyoboHandwriting2023wsa';
+    font-size: 14pt;
+    border: 2px dotted var(--main-color);
+    padding:10px;
+    border-radius: 5px;
+    color: var(--main-color);
+    background-color: var(--sub-color);
+    margin: 0 10px 0 10px;
+    width: 100px;
+}
+
+.nohit {
+    color: var(--red);
+}
+
+.homerun {
+    color: var(--green);
+}
