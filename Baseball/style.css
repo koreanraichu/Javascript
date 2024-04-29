@@ -6,8 +6,8 @@
 }
 
 :root {
-    --main-color: #343148;
-    --sub-color: #D7C49E;
+    --main-color: #234E70;
+    --sub-color: #FBF8BE;
     --red: #cc0000;
     --green: #046307;
     --white: #ffffff;
@@ -58,6 +58,10 @@ button {
     background-color: var(--sub-color);
     margin: 0 10px 0 10px;
     width: 100px;
+}
+
+.newgame:disabled {
+    display: none;
 }
 
 .nohit {

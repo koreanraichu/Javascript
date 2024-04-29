@@ -1,8 +1,10 @@
 const ballInput = document.querySelector('.ballinput');
 const ballButton = document.querySelector('.ballbutton');
+const ballNewgame = document.querySelector('.newgame');
 const ballAnswer = document.querySelector('.answer');
 // 입력창이랑 버튼은 바뀌는거 없으니깐 const로 가져왔습니다. 
 
+ballNewgame.disabled = true;
 let round = 0;
 let strike = 0;
 let ball = 0;
@@ -53,6 +55,11 @@ ballButton.addEventListener('click',()=>{
             ballText.innerText = `Round ${round}: ${ballInput.value}, ${strike}S ${ball}B ⚾`;
             ballText.classList.add('homerun');
             ballAnswer.appendChild(ballText);
+            ballNewgame.disabled = false;
+            ballNewgame.addEventListener('click',()=>{
+                history.go(0);
+            });
+            
         }
         else {
             let ballText = document.createElement('p');
