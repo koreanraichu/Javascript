@@ -40,7 +40,7 @@ ballButton.addEventListener('click',()=>{
             if (ballQuestion[i] == ballInput.value[i]) {
                 strike ++;
             }
-            else if (ballInput.value.indexOf([i]) != -1) {
+            else if (ballInput.value.indexOf(ballQuestion[i]) != -1) {
                 ball ++;
             }
         };
