@@ -35,5 +35,5 @@ button[0].addEventListener('click',(e) => {
 });
 
 button[1].addEventListener('click',(e)=>{
-    location.reload(true);
+    idValarea.innerText = '';
 });
