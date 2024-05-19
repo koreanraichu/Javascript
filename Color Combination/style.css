@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Ownglyph_eunbyul21-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_eunbyul21-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #151515;
+    --sub-color: #A91D3A;
+    --pale: #EEEEEE;
+}
+
+body {
+    font-family: 'Ownglyph_eunbyul21-Rg';
+    margin: 0;
+    padding: 0;
+    font-size: 16pt;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 10px auto;
+}
+
+button {
+    font-family: 'Ownglyph_eunbyul21-Rg';
+    width: 160px;
+    height: 35px;
+    border: none;
+    background-color: var(--sub-color);
+    color: var(--pale);
+    font-size: 15pt;
+}
+
+input[type="text"] {
+    font-family: 'Ownglyph_eunbyul21-Rg';
+    border: none;
+    border-bottom: 2px dotted var(--main-color);
+    margin-right: 20px;
+    width: 300px;
+    height: 30px;
+    font-size: 15pt;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+    border-bottom: 2px solid var(--sub-color);
+}
+
+.color-view {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+}
+
+.color-div1, .color-div2 {
+    width: 500px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.color-div1 {
+    background-color: var(--main-color);
+    color: var(--pale);
+}
+
+.color-div2 {
+    background-color: var(--pale);
+    color: var(--main-color);
+}
+
+.color-value1, .color-value2 {
+    margin: 0 auto;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.color1:nth-child(3) {
+    font-weight:bold;
+}
+
+.color2:nth-child(3) {
+    font-weight: bold;
+}
