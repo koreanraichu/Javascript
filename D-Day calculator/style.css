@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'MangoByeolbyeol';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #0A174E;
+    --sub-color: #F5D042;
+}
+
+body {
+    font-family: 'MangoByeolbyeol';
+    font-size: 14pt;
+    color: var(--main-color);
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+button {
+    font-family: 'MangoByeolbyeol';
+    color: var(--main-color);
+    background-color: var(--sub-color);
+    font-size: 1.0em;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="date"] {
+    font-family: 'MangoByeolbyeol';
+    color: var(--main-color);
+    font-size: 1.2em;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+}
