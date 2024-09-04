@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, button {
+    font-family: 'CookieRun-Regular';
+    font-size: 16pt;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #405D72;
+}
+
+span {
+    line-height: 1.5em;
+    font-size: 30pt;
+}
+
+i {
+    font-size: 1.8em;
+}
+
+.caltitle {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 2px double #17153B;
+}
+
+.calbody {
+    margin-top: 50px;
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
+.days {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.6em;
+    border-bottom: 1px solid #433D8B;
+    height: 75px;
+}
+
+.day, .date{
+    width: calc(100% / 7);
+}
+
+.date {
+    font-size: 0.9em;
+}
+
+.dates {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    text-align: center;
+    height: 630px;
+}
+
+.other {
+    display: none;
+}
+
+.day:nth-child(7n + 1),
+.date:nth-child(7n + 1) {
+    color: #cc0000;
+}
+
+.day:nth-child(7n),
+.date:nth-child(7n) {
+    color: #0000cc;
+}
+
+.today {
+    color: #50B498;
+}
+
+.lunar {
+    font-size: 0.75em;
+    opacity: 0.6;
+}
