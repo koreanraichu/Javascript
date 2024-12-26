@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'MonoplexKR-Regular';
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: #7c6bce;
+    color: #6cd5d5;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+i {
+    font-size: 25pt;
+}
+
+p:nth-child(1) {
+    font-size: 25pt;
+}
+
+p {
+    font-size: 16pt;
+}
+
+.card:nth-child(1) {
+    opacity: 0;
+    transform: translateY(75px);
+}
+
+.card:nth-child(2) {
+    background-color: #357ae9;
+    transition-delay: 1s;
+    opacity: 0;
+    transform: translateY(75px);
+}
+
+.card:nth-child(3) {
+    transition-delay: 2s;
+    opacity: 0;
+    transform: translateY(75px);
+}
