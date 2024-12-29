@@ -1,0 +1,125 @@
+@font-face {
+    font-family: '양진체';
+    src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: '양진체';
+}
+
+p {
+    margin: 0;
+    padding: 15px 0;
+}
+
+.wrapper {
+    width: 1600px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.image {
+    width: 800px;
+    height: 525px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.card {
+    width: 800px;
+    height: 450px;
+}
+
+.text {
+    width: 800px;
+    height: 75px;
+    font-size: 20pt;
+    line-height: 1.5em;
+    background-color: #ffffff;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    z-index: 999;
+}
+
+.image:hover .text {
+    text-align: center;
+    opacity: 1;
+    z-index: 999;
+    background-color: #ffffff;
+}
+
+.image:not(:hover) {
+    width: 80px;
+    filter: grayscale();
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.text:not(:hover) {
+    opacity: 0;
+}
+
+/* Gallery image*/
+.image .card1 {
+    background-image: url('https://i.imgur.com/hnxkWho.jpg');
+    background-size: cover;
+}
+
+.image .card2 {
+    background-image: url('https://i.imgur.com/OZaTUCb.jpg');
+    background-size: cover;
+}
+
+.image .card3 {
+    background-image: url('https://i.imgur.com/5gnpQNw.jpg');
+    background-size: cover;
+}
+
+.image .card4 {
+    background-image: url('https://i.imgur.com/IXJJu0I.jpg');
+    background-size: cover;
+}
+
+.image .card5 {
+    background-image: url('https://i.imgur.com/sexakO0.jpg');
+    background-size: cover;
+}
+
+.image .card6 {
+    background-image: url('https://i.imgur.com/gxr9C6X.jpg');
+    background-size: cover;
+}
+
+.image .card7 {
+    background-image: url('https://i.imgur.com/yAacpMb.jpg');
+    background-size: cover;
+}
+
+.image .card8 {
+    background-image: url('https://i.imgur.com/vnEfYcc.jpg');
+    background-size: cover;
+}
+
+.image .card9 {
+    background-image: url('https://i.imgur.com/A6saQvg.jpg');
+    background-size: cover;
+}
+
+.image .card10 {
+    background-image: url('https://i.imgur.com/ajZ8kYz.jpg');
+    background-size: cover;
+}

@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'RiaSans-ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'RiaSans-ExtraBold';
+}
+
+.wrapper {
+    width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    width: 800px;
+    height: 450px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 999;
+}
+
+.card:not(:hover) {
+    width: 80px;
+    filter: grayscale();
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+/* Gallery image*/
+.card1 {
+    background-image: url('https://i.imgur.com/hnxkWho.jpg');
+    background-size: cover;
+}
+
+.card2 {
+    background-image: url('https://i.imgur.com/OZaTUCb.jpg');
+    background-size: cover;
+}
+
+.card3 {
+    background-image: url('https://i.imgur.com/5gnpQNw.jpg');
+    background-size: cover;
+}
+
+.card4 {
+    background-image: url('https://i.imgur.com/IXJJu0I.jpg');
+    background-size: cover;
+}
+
+.card5 {
+    background-image: url('https://i.imgur.com/sexakO0.jpg');
+    background-size: cover;
+}
+
+.card6 {
+    background-image: url('https://i.imgur.com/gxr9C6X.jpg');
+    background-size: cover;
+}
+
+.card7 {
+    background-image: url('https://i.imgur.com/yAacpMb.jpg');
+    background-size: cover;
+}
+
