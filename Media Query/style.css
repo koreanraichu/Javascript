@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Gyeonggi_Batang_Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Gyeonggi_Batang_Regular';
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 450px;
+}
+
+.wrapper div {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px 0 10px 0;
+    line-height: 1.5em;
+}
+
+.icon {
+    background-color: #D9EAFD;
+    color: #2973B2;
+    font-size: 60pt;
+    margin: 5px;
+    text-align: center;
+}
+
+.paragraph {
+    background-color: #F2EFE7;
+    color: #48A6A7;
+    margin: 5px;
+}
+
+@media (max-width: 450px) {
+    .wrap {
+        width: 430px;
+    }
+    .wrapper div {
+        width: 190px;
+        height: 150px;
+    }
+
+    .icon {
+        font-size: 70pt;
+    }
+
+    .paragraph {
+        display: none;
+    }
+
+}
