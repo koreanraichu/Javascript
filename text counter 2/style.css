@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'HakgyoansimNadeuriTTF-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimNadeuriTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'HakgyoansimNadeuriTTF-B';
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputarea {
+    font-family: 'HakgyoansimNadeuriTTF-B';
+    font-size: 14pt;
+    resize: none;
+    outline: none;
+    border: 1px solid #aaaaaa;
+    width: 50%;
+    height: 200px;
+}
+
+.inputarea:focus {
+    border: 1px solid #328E6E;
+}
+
+.almost {
+    color: #FF9B17;
+}
+
+.over {
+    color: #cc0000;
+}
