@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'omyu_pretty';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-family: 'Ownglyph_corncorn-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 :root {
-    --main-color: #50586C;
-    --sub-color: #DCE2F0;
+    --main-color: #4B778D;
+    --sub-color: #D2E69C;
     --black: #000;
     --white: #fff;
 }
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    font-family: 'omyu_pretty';
+    font-family: 'Ownglyph_corncorn-Rg';
     color: var(--main-color);
 }
 
@@ -28,6 +28,7 @@ h1 {
 
 p {
     font-size: 14pt;
+    margin: 0;
 }
 
 .wrapper {
@@ -37,12 +38,17 @@ p {
 }
 
 input[type=text] {
-    font-family: 'omyu_pretty';
+    font-family: 'Ownglyph_corncorn-Rg';
     font-size: 14pt;
     width: 200px;
     height: 33px;
-    border: 2px dotted var(--main-color);
+    border: 1px dotted var(--main-color);
     margin: 10px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 2px dotted var(--main-color);
 }
 
 input[type=checkbox] {
@@ -52,7 +58,7 @@ input[type=checkbox] {
 }
 
 button {
-    font-family: 'omyu_pretty';
+    font-family: 'Ownglyph_corncorn-Rg';
     font-size: 14pt;
     width: 100px;
     height: 33px;
@@ -75,4 +81,12 @@ button {
 
 .check {
     justify-content: center;
+}
+
+p > button {
+    font-size: 12pt;
+    width: 75px;
+    height: 25px;
+    background-color: var(--sub-color);
+    color: var(--main-color);
 }
