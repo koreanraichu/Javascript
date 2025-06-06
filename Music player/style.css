@@ -1,0 +1,75 @@
+:root {
+    --main-color: #131D4F;
+    --sub-color: #954C2E;
+    --sub-blue: #254D70;
+    --pale-color: #EFE4D2;
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #999999;
+}
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GongGothicMedium';
+    font-size: 14pt;
+    margin: 0;
+    padding: 0;
+    color: var(--main-color);
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid var(--sub-blue);
+    color: var(--sub-blue);
+    background-color: var(--pale-color);
+    border-radius: 5px;
+    font-size: 18pt;
+}
+
+button {
+    width: 100px;
+    height: 75px;
+    font-size: 45pt;
+    background-color: var(--pale-color);
+    border: 2px solid var(--sub-color);
+    color: var(--sub-color);
+    border-radius: 5px;
+}
+
+.playerobject {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#playercontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+audio {
+    width: 500px;
+}
