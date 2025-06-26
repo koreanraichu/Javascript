@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'PFStardustExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/PFStardustExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #7b9acc;
+    --sub-color: #FCF6F5;
+}
+
+html, body {
+    font-family: 'PFStardustExtraBold';
+    font-size: 16pt;
+    margin: 0;
+    padding: 0;
+    color: var(--main-color);
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.photocontainer {
+    width: 990px;
+    background-color: var(--sub-color);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.grid-row {
+    background-color: var(--sub-color);
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+
+.photo-row {
+    flex: 1;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #603F83;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    color: var(--sub-color);
+}
+
+.grid-row:nth-child(2n) > .photo-row {
+    background-color: #C7D3D4;
+    color: var(--main-color);
+}
+
+input[type="text"] {
+    font-family: 'PFStardustExtraBold';
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+button {
+    font-family: 'PFStardustExtraBold';
+    width: 100px;
+    height: 30px;
+    border: 1px solid var(--main-color);
+    background-color: var(--sub-color);
+    border-radius: 5px;
+    color: var(--main-color);
+}
