@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'exqt';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/exqt.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #212125;
+    --sub-color: #239D60;
+    --sub2-color: #A3DE83;
+    --pale-color: #F7F39A;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+html {
+    font-family: 'exqt';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14pt;
+    color: var(--main-color);
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.count {
+    font-size: 13pt;
+    opacity: 0.9;
+    color: var(--sub-color);
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+textarea {
+    resize: none;
+    font-family: 'exqt';
+    font-size: 14pt;
+    width: 90%;
+    height: 680px;
+    margin: 0 auto;
+    color: var(--main-color);
+    border: 1px solid var(--sub-color);
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px dashed var(--main-color);
+}
+
+input[type=text] {
+    font-family: 'exqt';
+    font-size: 14pt;
+    width: 90%;
+    margin: 10px auto;
+    color: var(--main-color);
+    border: 1px solid var(--sub-color);
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 2px dashed var(--main-color);
+}
+
+button {
+    width: 150px;
+    height: 70px;
+    margin: 10px 0;
+    color: var(--sub-color);
+    border: 1px solid var(--sub-color);
+    background-color: var(--pale-color);
+    border-radius: 5px;
+}
+
+button > i {
+    font-size: 30pt;
+}
