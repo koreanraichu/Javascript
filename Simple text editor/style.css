@@ -1,21 +1,22 @@
 @font-face {
-    font-family: 'exqt';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/exqt.woff2') format('woff2');
+    font-family: 'Ownglyph_corncorn-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 :root {
-    --main-color: #212125;
-    --sub-color: #239D60;
-    --sub2-color: #A3DE83;
-    --pale-color: #F7F39A;
+    --main-color: #554e4f;
+    --sub-color: #ff8789;
+    --sub2-color: #8fbf9f;
+    --pale-color: #F5ECD7;
     --black: #000000;
+    --gray: #999999;
     --white: #ffffff;
 }
 
 html {
-    font-family: 'exqt';
+    font-family: 'Ownglyph_corncorn-Rg';
     margin: 0;
     padding: 0;
 }
@@ -23,6 +24,22 @@ html {
 body {
     font-size: 14pt;
     color: var(--main-color);
+    background: linear-gradient(135deg, var(--pale-color), var(--white));
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    box-shadow: 1px 1px 1px var(--gray);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--pale-color);
+    box-shadow: inset 1px 1px 1px var(--gray);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
 }
 
 .wrapper {
@@ -31,55 +48,79 @@ body {
 }
 
 .count {
-    font-size: 13pt;
+    font-size: 0.85em;
     opacity: 0.9;
     color: var(--sub-color);
 }
 
 h1 {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 textarea {
     resize: none;
-    font-family: 'exqt';
+    font-family: inherit;
     font-size: 14pt;
     width: 90%;
-    height: 680px;
+    height: 685px;
     margin: 0 auto;
     color: var(--main-color);
     border: 1px solid var(--sub-color);
+    line-height: 1.5em;
+    border-radius: 5px;
 }
 
 textarea:focus {
     outline: none;
-    border: 2px dashed var(--main-color);
+    border: 1px dashed var(--main-color);
 }
 
 input[type=text] {
-    font-family: 'exqt';
+    font-family: inherit;
     font-size: 14pt;
     width: 90%;
     margin: 10px auto;
     color: var(--main-color);
     border: 1px solid var(--sub-color);
+    border-radius: 5px;
 }
 
 input[type=text]:focus {
     outline: none;
-    border: 2px dashed var(--main-color);
+    border: 1px dashed var(--main-color);
 }
 
 button {
-    width: 150px;
-    height: 70px;
+    width: 125px;
+    height: 65px;
     margin: 10px 0;
-    color: var(--sub-color);
-    border: 1px solid var(--sub-color);
-    background-color: var(--pale-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color: var(--sub2-color);
     border-radius: 5px;
 }
 
 button > i {
     font-size: 30pt;
+}
+
+.copied {
+    display: flex;
+    position: absolute;
+    width: 270px;
+    height: 65px;
+    background-color: var(--sub2-color);
+    color: var(--main-color);
+    transition: .1s;
+    top: -10%;
+    right: 7%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px var(--gray);
+}
+
+.copied > p {
+    font-size: 1.3em;
 }

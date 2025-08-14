@@ -7,10 +7,14 @@
     <body>
         <div class="wrapper">
             <h1>매우 심플한 텍스트 에디터</h1>
-            <input id="title" type="text" autofocus="off" placeholder="여기에 제목을 입력해주세요. 파일명으로 쓸겁니다.">
+            <input id="title" type="text" autofocus="off" placeholder="여기에 제목을 입력해주세요. 파일명으로 쓸겁니다. 파일은 txt파일로 저장됩니다.">
             <textarea id="textarea"></textarea>
             <p class="count">0</p>
-            <button id="save"><i class="fa-solid fa-floppy-disk"></i></button>
+            <button id="save"><i class="fa-solid fa-download"></i></button>
+            <button id="clipbrd"><i class="fa-solid fa-clipboard-list"></i></button>
+        </div>
+        <div class="copied">
+            <p>텍스트가 복사되었습니다!</p>
         </div>
     </body>
     <script src="script.js"></script>
