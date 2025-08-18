@@ -5,6 +5,60 @@
     font-style: normal;
 }
 
+/* Editor fonts */
+@font-face {
+    font-family: 'CHOGOONCHICKENSCRATCHV7';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2507-2@1.0/CHOGOONCHICKENSCRATCHV7.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DOSIyagiMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSIyagiMedium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MabinogiClassicR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/MabinogiClassicR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* End */
+
 :root {
     --main-color: #554e4f;
     --sub-color: #ff8789;
@@ -62,7 +116,7 @@ textarea {
     font-family: inherit;
     font-size: 14pt;
     width: 90%;
-    height: 685px;
+    height: 580px;
     margin: 0 auto;
     color: var(--main-color);
     border: 1px solid var(--sub-color);
@@ -88,6 +142,17 @@ input[type=text] {
 input[type=text]:focus {
     outline: none;
     border: 1px dashed var(--main-color);
+}
+
+select {
+    width: 150px;
+    height: 35px;
+    font-family: inherit;
+    font-size: 14pt;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    background-color: var(--white);
 }
 
 button {

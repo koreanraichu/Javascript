@@ -7,11 +7,26 @@
     <body>
         <div class="wrapper">
             <h1>매우 심플한 텍스트 에디터</h1>
+            <!-- 글꼴 변경용 select 태그-->
+            <select id="fonts">
+                <option name="editorfont" value="ownglyphcorncorn">온글잎 콘콘(기본)</option>
+                <option name="editorfont" value="CHOGOONCHICKENSCRATCHV7">조군 개발새발 7</option>
+                <option name="editorfont" value="nanumgothic">나눔고딕</option>
+                <option name="editorfont" value="Pretendard">프리텐다드</option>
+                <option name="editorfont" value="ridibatang">리디바탕</option>
+                <option name="editorfont" value="dosiyagi">도스이야기</option>
+                <option name="editorfont" value="mabinogiclassic">마비옛체</option>
+                <option name="editorfont" value="maplestory">메이플스토리</option>
+                <option name="editorfont" value="cookierun">쿠키런</option>
+            </select>
+            <!--여기까지임-->
+            <div>
             <input id="title" type="text" autofocus="off" placeholder="여기에 제목을 입력해주세요. 파일명으로 쓸겁니다. 파일은 txt파일로 저장됩니다.">
             <textarea id="textarea"></textarea>
             <p class="count">0</p>
             <button id="save"><i class="fa-solid fa-download"></i></button>
             <button id="clipbrd"><i class="fa-solid fa-clipboard-list"></i></button>
+            </div>
         </div>
         <div class="copied">
             <p>텍스트가 복사되었습니다!</p>
