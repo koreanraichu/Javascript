@@ -73,12 +73,20 @@ fontSelection.addEventListener('click',()=>{
         textTitle.style.fontFamily = 'MabinogiClassicR';
         textArea.style.fontFamily = 'MabinogiClassicR';
     } else if (fontSelection.selectedIndex == 7) {
-        fontSelection.style.fontFamily = 'MaplestoryOTFBold';
-        textTitle.style.fontFamily = 'MaplestoryOTFBold';
-        textArea.style.fontFamily = 'MaplestoryOTFBold';
+        fontSelection.style.fontFamily = 'Ownglyph_okticon-Bd';
+        textTitle.style.fontFamily = 'Ownglyph_okticon-Bd';
+        textArea.style.fontFamily = 'Ownglyph_okticon-Bd';
     } else if (fontSelection.selectedIndex == 8) {
-        fontSelection.style.fontFamily = 'CookieRun-Regular';
-        textTitle.style.fontFamily = 'CookieRun-Regular';
-        textArea.style.fontFamily = 'CookieRun-Regular';
+        fontSelection.style.fontFamily = 'omyu_pretty';
+        textTitle.style.fontFamily = 'omyu_pretty';
+        textArea.style.fontFamily = 'omyu_pretty';
+    } else if (fontSelection.selectedIndex == 9) {
+        fontSelection.style.fontFamily = 'Orbit-Regular';
+        textTitle.style.fontFamily = 'Orbit-Regular';
+        textArea.style.fontFamily = 'Orbit-Regular';
+    } else if (fontSelection.selectedIndex == 10) {
+        fontSelection.style.fontFamily = 'HakgyoansimGeurimilgiTTF-R';
+        textTitle.style.fontFamily = 'HakgyoansimGeurimilgiTTF-R';
+        textArea.style.fontFamily = 'HakgyoansimGeurimilgiTTF-R';
     }
 });
