@@ -5,6 +5,22 @@ const textCopy = document.querySelector('#clipbrd');
 const count = document.querySelector('.count');
 const Copied = document.querySelector('.copied');
 const fontSelection = document.querySelector('#fonts');
+const fileOpen = document.querySelector('#textuploader');
+
+fileOpen.addEventListener('change',(e)=>{
+    const file = e.target.files[0]; //너도 배열이냐?
+    if (!file) return; 
+
+    textTitle.value = file.name.replace(/\.txt$/, '');
+
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        textArea.value = event.target.result;
+        count.innerText = textArea.value.length;
+    };
+    
+    reader.readAsText(file, 'utf-8');
+})
 
 textSave.addEventListener('click',()=>{
     const blob = new Blob([textArea.value], {type:'text/plain'});
