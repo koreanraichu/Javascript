@@ -30,10 +30,10 @@
 }
 
 @font-face {
-    font-family: 'DOSIyagiMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSIyagiMedium.woff2') format('woff2');
+    font-family: 'Xcu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/exqt.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -51,34 +51,34 @@
 }
 
 @font-face {
-    font-family: 'omyu_pretty';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-family: 'SchoolSafetyOcarina';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/HakgyoansimOcarinaR.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Orbit-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+    font-family: 'ThinRounded';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/ThinDungGeunMo.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'HakgyoansimGeurimilgiTTF-R';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimGeurimilgiTTF-R.woff2') format('woff2');
+    font-family: 'MissedSimsim';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/Griun_Simsimche-Rg.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
+    font-display: swap;
 }
 
 /* End */
 
 :root {
-    --main-color: #4A628A;
-    --sub-color: #7AB2D3;
-    --sub2-color: #B9E5E8;
-    --pale-color: #DFF2EB;
-    --black: #000000;
+    --main-color: #1e295a;
+    --sub-color: #833500;
+    --sub2-color: #F18F01;
+    --pale-color: #F5ECD7;
+    --black: #353535;
     --gray: #999999;
     --white: #ffffff;
 }

@@ -81,9 +81,9 @@ fontSelection.addEventListener('click',()=>{
         textTitle.style.fontFamily = 'RIDIBatang';
         textArea.style.fontFamily = 'RIDIBatang';
     } else if (fontSelection.selectedIndex == 5) {
-        fontSelection.style.fontFamily = 'DOSIyagiMedium';
-        textTitle.style.fontFamily = 'DOSIyagiMedium';
-        textArea.style.fontFamily = 'DOSIyagiMedium';
+        fontSelection.style.fontFamily = 'Xcu';
+        textTitle.style.fontFamily = 'Xcu';
+        textArea.style.fontFamily = 'Xcu';
     } else if (fontSelection.selectedIndex == 6) {
         fontSelection.style.fontFamily = 'MabinogiClassicR';
         textTitle.style.fontFamily = 'MabinogiClassicR';
@@ -93,16 +93,16 @@ fontSelection.addEventListener('click',()=>{
         textTitle.style.fontFamily = 'Ownglyph_okticon-Bd';
         textArea.style.fontFamily = 'Ownglyph_okticon-Bd';
     } else if (fontSelection.selectedIndex == 8) {
-        fontSelection.style.fontFamily = 'omyu_pretty';
-        textTitle.style.fontFamily = 'omyu_pretty';
-        textArea.style.fontFamily = 'omyu_pretty';
+        fontSelection.style.fontFamily = 'SchoolSafetyOcarina';
+        textTitle.style.fontFamily = 'SchoolSafetyOcarina';
+        textArea.style.fontFamily = 'SchoolSafetyOcarina';
     } else if (fontSelection.selectedIndex == 9) {
-        fontSelection.style.fontFamily = 'Orbit-Regular';
-        textTitle.style.fontFamily = 'Orbit-Regular';
-        textArea.style.fontFamily = 'Orbit-Regular';
+        fontSelection.style.fontFamily = 'ThinRounded';
+        textTitle.style.fontFamily = 'ThinRounded';
+        textArea.style.fontFamily = 'ThinRounded';
     } else if (fontSelection.selectedIndex == 10) {
-        fontSelection.style.fontFamily = 'HakgyoansimGeurimilgiTTF-R';
-        textTitle.style.fontFamily = 'HakgyoansimGeurimilgiTTF-R';
-        textArea.style.fontFamily = 'HakgyoansimGeurimilgiTTF-R';
+        fontSelection.style.fontFamily = 'MissedSimsim';
+        textTitle.style.fontFamily = 'MissedSimsim';
+        textArea.style.fontFamily = 'MissedSimsim';
     }
 });
