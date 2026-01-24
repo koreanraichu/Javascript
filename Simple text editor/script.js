@@ -64,53 +64,45 @@ fontSelection.addEventListener('click',()=>{
         fontSelection.style.fontFamily = 'Ownglyph_corncorn-Rg';
         textTitle.style.fontFamily = 'Ownglyph_corncorn-Rg';
         textArea.style.fontFamily = 'Ownglyph_corncorn-Rg';
-    } else if (fontSelection.selectedIndex == 1) {
-        fontSelection.style.fontFamily = 'Ownglyph_okticon-Bd';
-        textTitle.style.fontFamily = 'Ownglyph_okticon-Bd';
-        textArea.style.fontFamily = 'Ownglyph_okticon-Bd';
-    } else if (fontSelection.selectedIndex == 2) {
-        fontSelection.style.fontFamily = 'OngleipSeunghun';
-        textTitle.style.fontFamily = 'OngleipSeunghun';
-        textArea.style.fontFamily = 'OngleipSeunghun';
-    }else if (fontSelection.selectedIndex == 3) {
-        fontSelection.style.fontFamily = 'nanumgothic';
-        textTitle.style.fontFamily = 'nanumgothic';
-        textArea.style.fontFamily = 'nanumgothic';
-    } else if (fontSelection.selectedIndex == 4) {
+    }else if (fontSelection.selectedIndex == 1) {
         fontSelection.style.fontFamily = 'Pretendard-Regular';
         textTitle.style.fontFamily = 'Pretendard-Regular';
         textArea.style.fontFamily = 'Pretendard-Regular';
-    } else if (fontSelection.selectedIndex == 5) {
+    } else if (fontSelection.selectedIndex == 2) {
         fontSelection.style.fontFamily = 'RIDIBatang';
         textTitle.style.fontFamily = 'RIDIBatang';
         textArea.style.fontFamily = 'RIDIBatang';
-    } else if (fontSelection.selectedIndex == 6) {
+    } else if (fontSelection.selectedIndex == 3) {
         fontSelection.style.fontFamily = 'Xcu';
         textTitle.style.fontFamily = 'Xcu';
         textArea.style.fontFamily = 'Xcu';
-    } else if (fontSelection.selectedIndex == 7) {
+    } else if (fontSelection.selectedIndex == 4) {
         fontSelection.style.fontFamily = 'MabinogiClassicR';
         textTitle.style.fontFamily = 'MabinogiClassicR';
         textArea.style.fontFamily = 'MabinogiClassicR';
+    } else if (fontSelection.selectedIndex == 5) {
+        fontSelection.style.fontFamily = 'StoryBold';
+        textTitle.style.fontFamily = 'StoryBold';
+        textArea.style.fontFamily = 'StoryBold';
+    } else if (fontSelection.selectedIndex == 6) {
+        fontSelection.style.fontFamily = 'BelovedMyoeunttobak';
+        textTitle.style.fontFamily = 'BelovedMyoeunttobak';
+        textArea.style.fontFamily = 'BelovedMyoeunttobak';
+    } else if (fontSelection.selectedIndex == 7) {
+        fontSelection.style.fontFamily = 'NostalgicPoliceFairness';
+        textTitle.style.fontFamily = 'NostalgicPoliceFairness';
+        textArea.style.fontFamily = 'NostalgicPoliceFairness';
     } else if (fontSelection.selectedIndex == 8) {
-        fontSelection.style.fontFamily = 'ThinRounded';
-        textTitle.style.fontFamily = 'ThinRounded';
-        textArea.style.fontFamily = 'ThinRounded';
+        fontSelection.style.fontFamily = 'NostalgicGellyRoll';
+        textTitle.style.fontFamily = 'NostalgicGellyRoll';
+        textArea.style.fontFamily = 'NostalgicGellyRoll';
     } else if (fontSelection.selectedIndex == 9) {
-        fontSelection.style.fontFamily = 'MissedSimsim';
-        textTitle.style.fontFamily = 'MissedSimsim';
-        textArea.style.fontFamily = 'MissedSimsim';
+        fontSelection.style.fontFamily = 'Rimgul';
+        textTitle.style.fontFamily = 'Rimgul';
+        textArea.style.fontFamily = 'Rimgul';
     } else if (fontSelection.selectedIndex == 10) {
-        fontSelection.style.fontFamily = 'SchoolSafetyOcarina';
-        textTitle.style.fontFamily = 'SchoolSafetyOcarina';
-        textArea.style.fontFamily = 'SchoolSafetyOcarina';
-    } else if (fontSelection.selectedIndex == 11) {
-        fontSelection.style.fontFamily = 'SchoolSafetyColoredPencil';
-        textTitle.style.fontFamily = 'SchoolSafetyColoredPencil';
-        textArea.style.fontFamily = 'SchoolSafetyColoredPencil';
-    } else if (fontSelection.selectedIndex == 12) {
-        fontSelection.style.fontFamily = 'SchoolSafetyBookmark';
-        textTitle.style.fontFamily = 'SchoolSafetyBookmark';
-        textArea.style.fontFamily = 'SchoolSafetyBookmark';
+        fontSelection.style.fontFamily = 'Umdot';
+        textTitle.style.fontFamily = 'Umdot';
+        textArea.style.fontFamily = 'Umdot';
     } 
 });

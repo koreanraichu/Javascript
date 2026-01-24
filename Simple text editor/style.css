@@ -13,8 +13,6 @@
     font-display: swap;
 }
 
-@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
-
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -44,43 +42,43 @@
 }
 
 @font-face {
-    font-family: 'Ownglyph_okticon-Bd';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/Ownglyph_okticon-Bd.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SchoolSafetyOcarina';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/HakgyoansimOcarinaR.woff2') format('woff2');
+    font-family: 'StoryBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2512-1@1.0/IyagiGGC.woff') format('woff');
     font-weight: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'ThinRounded';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/ThinDungGeunMo.woff2') format('woff2');
+    font-family: 'BelovedMyoeunttobak';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_Myoeunddobak-Rg.woff2') format('woff2');
     font-weight: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'MissedSimsim';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/Griun_Simsimche-Rg.woff2') format('woff2');
+    font-family: 'NostalgicPoliceFairness';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/Griun_PolFairness-Rg.woff2') format('woff2');
     font-weight: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'SchoolSafetyBookmark';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-1@1.0/HakgyoansimChaekgalpiR.woff2') format('woff2');
+    font-family: 'NostalgicGellyRoll';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_Gellyroll-Rg.woff2') format('woff2');
     font-weight: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'OngleipSeunghun';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408@1.0/Ownglyph_Seung_Hoon-Rg.woff2') format('woff2');
+    font-family: 'Rimgul';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/Limgul12.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Umdot';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/Umdot12.woff2') format('woff2');
     font-weight: normal;
     font-display: swap;
 }
