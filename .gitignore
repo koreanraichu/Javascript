@@ -1,0 +1,14 @@
+# macOS 관련
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python 관련
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# 데이터 분석 관련 (용량이 큰 데이터 파일은 깃헙에 안 올리는 게 좋아요)
+data/*.csv
