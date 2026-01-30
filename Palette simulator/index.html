@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Seaborn palette simulator</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Seaborn palette simulator</h1>
+            <p>그... 저기 인풋창에 색깔 두개 입력하시면 파레트랑 cmap이랑 보여줄거긴 합니다. 근데... 아... </p>
+            <p>세개 이상... 그거는 제 능력 밖이니까 걍 두개씩 돌려보세요... <s>이봐요</s></p>
+            <div class="color_input">
+                <p>첫번째 색깔: #</p><input type="text" id="first_color">
+                <p>두번째 색깔: #</p><input type="text" id="second_color">
+                <button id="#generate">Generate!</button>
+            </div>
+            <div class="palette_area">
+                <div class="palette_wrapper">
+                    <p>Palette</p>
+                    <div class="palette">
+                        <!--동적 생성 영역입니다-->
+                    </div>
+                </div>
+                <div class="cmap_wrapper">
+                    <p>Colormap</p>
+                    <div class="cmap">
+                        <!--동적 생성 영역입니다-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
