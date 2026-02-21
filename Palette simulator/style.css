@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'Rimgul';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/Limgul12.woff2') format('woff2');
+    font-family: 'Mulmaru';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/Mulmaru.woff2') format('woff2');
     font-weight: normal;
     font-display: swap;
 }
 
 :root {
-    --main-color: #09637E;
-    --sub-color: #088395;
-    --sub-color2: #7AB2B2;
+    --main-color: #0B2D72;
+    --sub-color: #0992C2;
+    --sub-color2: #0AC4E0;
     --pale-color: #EBF4F6;
     --black: #000000;
     --white: #fafafa;
@@ -16,8 +16,8 @@
 }
 
 html, body {
-    font-family: 'Rimgul';
-    font-size: 14pt;
+    font-family: 'Mulmaru';
+    font-size: 13pt;
     color: var(--main-color);
     background-color: var(--white);
     margin: 0;
@@ -33,7 +33,7 @@ p {
 
 .wrapper {
     width: 70%;
-    margin: 15px auto;
+    margin: 10px auto;
 }
 
 .color_input {
@@ -42,7 +42,7 @@ p {
     align-content: center;
     align-items: center;
     justify-content: center;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .color_input > p {
@@ -52,7 +52,7 @@ p {
 
 .palette_area {
     width: 90%;
-    margin: 35px auto;
+    margin: 20px auto;
 }
 
 .palette_wrapper {
@@ -62,7 +62,7 @@ p {
     flex-direction: row;
     align-content: center;
     align-items: center;
-    margin: 35px 0;
+    margin: 25px 0;
 }
 
 .cmap_wrapper {
@@ -70,9 +70,10 @@ p {
     height: 100px;
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-content: flex-start;
     align-items: center;
-    margin: 35px 0;
+    margin: 25px 0;
+    flex-wrap: wrap;
 }
 
 .palette_wrapper > p {
@@ -80,23 +81,25 @@ p {
 }
 
 .cmap_wrapper > p {
-    width: 175px;
+    width: 100%;
 }
 
 .palette {
     width: 100%;
-    height: 100px;
+    height: 90px;
     display:flex;
 }
 
-.cmap {
+.cmap_wrapper > div {
     width: 100%;
-    height: 100px;
+    height: 90px;
+    margin: 5px 0;
 }
+
 
 .palette_chip {
     width: calc(100% / 10);
-    height: 100px;
+    height: 90px;
 }
 
 

@@ -1,20 +1,31 @@
 // 빠레트 만들 영역
 const cmap_gradation = document.querySelector('.cmap_wrapper');
-const cmap_div = document.querySelector('.cmap');
+const cmap_div = document.querySelector('.cmap1');
+const cmap_div_light = document.querySelector('.cmap2'); // Light
+const cmap_div_dark = document.querySelector('.cmap3'); // Dark
+const cmap_div_light2 = document.querySelector('.cmap4'); // Light
+const cmap_div_dark2 = document.querySelector('.cmap5'); // Dark
+const cmap_div_divl = document.querySelector('.cmap6'); // Diverging(light)
+const cmap_div_divd = document.querySelector('.cmap7'); // Diverging(dark)
+
 const palette_gradation = document.querySelector('.palette_wrapper');
 const palette_div = document.querySelector('.palette');
 // Input
 const first_color = document.querySelector('#first_color');
 const second_color = document.querySelector('#second_color');
 
-const color_button = document.querySelector('button'); // Button
+// Button
+const color_button = document.querySelector('button');
 
 var regex = /^(?:[0-9a-f]{3}){1,2}$/i; // 유효성검사용 
 
 // 벗흔이여 일을 하세요
 color_button.addEventListener('click',()=>{
-    if (!regex.test(first_color.value) || !regex.test(second_color.value)) {
-        alert('유효한 색상값이 아닙니다!')
+    const color1 = first_color.value.replace(/#/g, '').trim(); // 응 샵 들어가
+    const color2 = second_color.value.replace(/#/g, '').trim(); // 얘도 데려가 
+    if (!regex.test(color1) || !regex.test(color2)) {
+        alert('유효한 색상값이 아닙니다!');
+        console.log("실패한 값:", color1, color2);
     } else {
         palette_div.innerHTML = '';
         cmap_div.innerHTML = '';
@@ -25,8 +36,8 @@ color_button.addEventListener('click',()=>{
             const b = parseInt(hex.substring(4, 6), 16);
             return [r, g, b];
         };
-        const startRgb = hexToRgb(first_color.value);
-        const endRgb = hexToRgb(second_color.value);
+        const startRgb = hexToRgb(color1);
+        const endRgb = hexToRgb(color2);
         const n = 10;
 
         //자 드가자 
@@ -49,6 +60,20 @@ color_button.addEventListener('click',()=>{
         }
     }
     // 그라데이션
-    cmap_div.style.backgroundImage = `linear-gradient(to right, ${"#" + first_color.value}, ${"#" + second_color.value})`; // 왼->오
+    cmap_div.style.backgroundImage = `linear-gradient(to right, ${"#" + color1}, ${"#" + color2})`; // 왼->오
+
+    // 라이트
+    cmap_div_light.style.backgroundImage = `linear-gradient(to right, ${"#" + color1}, #ffffff)`; // 왼->오
+    cmap_div_light2.style.backgroundImage = `linear-gradient(to right, ${"#" + color2}, #ffffff)`; // 왼->오 (두번째색)
+
+    // 다크
+    cmap_div_dark.style.backgroundImage = `linear-gradient(to right, ${"#" + color1}, #000000)`; // 왼->오
+    cmap_div_dark2.style.backgroundImage = `linear-gradient(to right, ${"#" + color2}, #000000)`; // 왼->오 (두번째색)
+
+    //diverging(light)
+    cmap_div_divl.style.backgroundImage = `linear-gradient(to right, ${"#" + color1}, #ffffff, ${"#" + color2})`; // 왼->오
+
+    //diverging(dark)
+    cmap_div_divd.style.backgroundImage = `linear-gradient(to right, ${"#" + color1}, #000000, ${"#" + color2})`; // 왼->오
     
 });
