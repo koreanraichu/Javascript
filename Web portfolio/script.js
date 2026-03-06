@@ -1,7 +1,11 @@
+// 탭메뉴용 요소
 const tabList = document.querySelectorAll('.header .tab .tabbtn .btn');
 const tabContents = document.querySelectorAll('.main .content .cont');
 let activeContents = '';
-console.log(tabList, tabContents)
+
+//아코디언 패널
+const accordion = document.querySelectorAll('.accordion');
+const panel = document.querySelectorAll('.panel');
 
 //메인 탭메뉴 
 // var 대신 let을 사용하면 클로저 문제 없이 인덱스 i를 안전하게 쓸 수 있습니다.
@@ -51,3 +55,19 @@ function initTab() {
 initTab(); // 실행
 
 // 프로젝트 아코디언 패널
+accordion.forEach((title) => {
+    title.addEventListener('click', () => {
+        // 클릭된 제목 바로 다음 요소(accordion_contents)를 타겟팅합니다.
+        const content = title.nextElementSibling;
+        const icon = title.querySelector('.icon-toggle')
+
+        // 보이고 안 보이고를 토글합니다.
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            content.style.display = 'block';
+            icon.style.transform = 'rotate(180deg)';
+        }
+    });
+});

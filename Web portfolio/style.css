@@ -7,13 +7,18 @@
 
 :root {
     --main-color: #8E7AB5;
+    --sub-color: #4e8075;
     /* 톤다운된 라벤더 */
     --main-dark: #635284;
+    --sub-dark:#354b46;
     /* 어두운 자수정색 */
     --main-light: #F3F0F9;
+    --sub-light: #f3f7f3;
     /* 부드러운 화이트 퍼플 */
     --white: #F6f6f6;
     --black: #2D2D2D;
+    --gray: #bbbbbb;
+    --gray2: #999999;
 }
 
 html,
@@ -34,17 +39,35 @@ p {
     margin: 5px;
 }
 
+.explain {
+    font-size: 0.8em;
+    color: var(--gray2);
+}
+
 h2,
-h3 {
+h3,
+h4 {
     color: var(--main-dark);
 }
 
 blockquote {
-    color: var(--main-color)
+    color: var(--sub-dark);
 }
 
 ul {
     margin: 0;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+li::before {
+    content: "\f00c"; 
+    
+    /* 7 버전 폰트 패밀리 확인 (보통 'Font Awesome 7 Free' 또는 'Font Awesome 7 Brands') */
+    font-family: "Font Awesome 7 Free"; 
+    font-weight: 900; 
+    color: var(--sub-color);
+    margin: 0 10px;
 }
 
 .wrapper {
@@ -139,12 +162,19 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-#tab1 {
-    grid-template-columns: 1.5fr 1fr;
+/* 개별 오브젝트를 감싸는 카드*/
+.card {
+    width: 95%;
+    border: 2px solid var(--sub-dark);
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--sub-light);
+    box-shadow: 2px 2px 2px var(--gray);
 }
 
-.about {
-    width: 95%;
+#tab1 {
+    grid-template-columns: 1.5fr 1fr;
 }
 
 .about>p {
@@ -162,6 +192,55 @@ a {
 
 .pub-item {
     font-size: 0.95em;
+}
+
+#tab2 {
+    grid-template-columns: 1fr;
+}
+
+#skill_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+/*아코디언 패널*/
+.accordion {
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    padding: 8px;
+    transition: all 0.6s ease-in-out;
+}
+.panel {
+    background-color: var(--sub-light);
+    color: var(--black);
+    padding: 12px;
+    display: none;
+    transition: all 0.6s ease-in-out;
+}
+
+.panel > h3 {
+    color: var(--sub-dark);
+}
+
+.icon-toggle {
+    transition: transform 0.3s ease; /* 0.3초 동안 부드럽게 회전 */
+    color: var(--main-light);
+}
+
+.proj_link {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+}
+
+.proj_link i {
+    color: var(--sub-dark);
+    margin: 0;
+}
+
+.proj_link a {
+    margin: 0 10px;
 }
 
 /* 미디어쿼뤼이이이이이아 */
@@ -202,5 +281,9 @@ a {
         width: 100%;
         justify-content: flex-start;
         /* 모바일에선 왼쪽 정렬 */
+    }
+
+    #tab2 {
+        grid-template-columns: 1fr;
     }
 }
