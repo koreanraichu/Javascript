@@ -1,14 +1,136 @@
 <html>
-    <head>
-        <link href="style.css" rel="stylesheet">'
-        <title>Web Portfolio</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <h1>Under construction</h1>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dc58858c96.js" crossorigin="anonymous"></script>
+    <title>Web Portfolio</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="wrapper">
+        <div class="header">
+            <h1>Kyungsun Ha (K.S.Ha)</h1>
             <p>Bioinformatics / Data Analysis Portfolio</p>
-            <p>Phylogenetic Analysis • Viral Genomics • Time-Series Modeling</p>
+            <div class="tab">
+                <div class="tabbtn">
+                    <div class="btn">
+                        <a href="#tab1">About</a>
+                    </div>
+                    <div class="btn">
+                        <a href="#tab2">Skill</a>
+                    </div>
+                    <div class="btn">
+                        <a href="#tab3">Projects</a>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="https://github.com/koreanraichu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:pokemonms@naver.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://koreanraichu.tistory.com/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                    <a href="tel:010-5027-0328" target="_blank"><i class="fa-solid fa-mobile-screen"></i></a>
+                </div>
+            </div>
+            <div class="line"></div> <!-- 줄 줄 그냥 줄-->
         </div>
-    </body>
-    <script src="script.js"></script>
+
+        <!--Main-->
+        <div class="main">
+            <div class="content">
+                <div id="tab1" class="cont">
+                    <!--About (약력 이런거)-->
+                    <div class="about" id="about1"> <!--대충 자기소개 들어가는 영역-->
+                        <blockquote>인생은 언제나 Try and Except</blockquote>
+                        <h2>About</h2>
+                        <p>늦다면 늦고 빠르다면 빠른 나이, 서른 여섯에 데이터 분석의 길에 뛰어들었습니다. 항상 재미있는 일을 찾고 있습니다. </p>
+                        <p>코딩과의 인연은 어릴적부터 시작했던 네이버 마이홈과 나모 웹 에디터, 그리고 HTML이 시발점이었습니다. 그 후 고등학생때는 Visual Basic을, 대학생때는
+                            MATLAB을, 또 일하면서는 JSP를, 또 Python에 이어서 JavaScript까지 잡게 됐습니다. </p>
+                        <h3>인생은 언제나 Try and Except</h3>
+                        <p>마치 404 NOT FOUND 페이지처럼, 인생을 살다가 안 풀리거나 시행착오가 생기는 일이 있다고 해서 거기서 끝나는 게 아닙니다. 404 NOT FOUND가 뜨면
+                            예외처리를 통해 미리 만들어 둔 페이지로 안내하듯, 우리 인생 역시 안 될때에 대한 대비를 해야 합니다. </p>
+                        <h2>Style</h2>
+                        <p><i class="fa-solid fa-asterisk"></i>윈도우, 리눅스(Ubuntu), 맥을 전부 써봤습니다. 코딩할 때 편한건 맥 > 리눅스 > 윈도우
+                            순입니다. 세팅도 혼자 할 수 있습니다. </p>
+                        <p><i class="fa-solid fa-asterisk"></i>주로 VScode(+Antigravity)를 씁니다. Pycharm은 쓰긴 쓰지만 리눅스에서는
+                            일일이 설치경로까지 찾아가야 해서 번거롭고, Spyder는 리눅스에서 한글 입력이 안 돼서 불편해합니다. </p>
+                        <h2>TMI</h2>
+                        <p><i class="fa-solid fa-asterisk"></i>도서실 지박령으로 살다가 고등학생때 담임 선생님의 추천으로 도전 골든벨에 출연해서 최후의 3인까지
+                            갔었습니다. </p>
+                    </div>
+                    <div class="about" id="about2"> <!--대충 이력 들어가는 영역-->
+                        <h2>Education</h2>
+                        <p><span>2010 ~ 2014</span> <span>세종대학교 분자생물학과 졸업</span></p>
+                        <h2>Paper</h2>
+                        <div class="pub-item">
+                            <div class="pub-meta">
+                                <span class="journal-tag">Plant Cell Physiol.</span>
+                                <span class="year">2015</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                Genetic identification of ACC-RESISTANT2 reveals involvement of LHT1 in the uptake of
+                                ACC in Arabidopsis thaliana
+                            </h3>
+
+                            <p class="authors">
+                                Shin K, Lee S, Song WY, Lee RA, Lee I, <strong class="highlight">Ha K</strong>, Koo JC,
+                                Park SK, Nam HG, Lee Y, Soh MS.
+                            </p>
+
+                            <div class="contribution">
+                                <strong>My Role:</strong>
+                                <p>식물 유전체 데이터 분석 및 특정 돌연변이체의 ACC 수송 메커니즘 검증 데이터 처리 참여</p>
+                            </div>
+                        </div>
+                        <h2>Certificate</h2>
+
+                        <p><i class="fa-solid fa-award"></i>컴퓨터활용능력 2급</p>
+                        <p><i class="fa-solid fa-award"></i>데이터분석준전문가(ADsP)</p>
+                        <p><i class="fa-solid fa-award"></i>SQL 개발자(SQLD)</p>
+
+                        <h2>Training</h2>
+
+                        <p><i class="fa-solid fa-user-check"></i><strong>멋쟁이사자처럼</strong> | 데이터분석 부트캠프 7기 수료</p>
+                        <p><i class="fa-solid fa-user-check"></i><strong>NIPA</strong> | AI 전문 인력 양성 과정 이수</p>
+                        <p><i class="fa-solid fa-user-check"></i><strong>가톨릭대학교산업협력단</strong> | 연구데이터 디지털 전환 및 표준화 교육
+                        </p>
+                    </div>
+                </div>
+                <div id="tab2" class="cont">
+                    <!--Skill (어떤 기술을 가지고 있는지)-->
+                    <h2>Skill</h2>
+                    <h3><i class="fa-brands fa-python"></i>Python</h3>
+                    <ul>
+                        <li>Numpy</li>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                        <li>Scipy.stats</li>
+                        <li>statsmodels</li>
+                        <li>Biopython</li>
+                        <li>GEOparse</li>
+                    </ul>
+                    <h3><i class="fa-brands fa-microsoft"></i>Microsoft Office</h3>
+                    <ul>
+                        <li><i class="fa-regular fa-file-excel"></i>Excel</li>
+                        <li><i class="fa-regular fa-file-powerpoint"></i>Powerpoint</li>
+                        <li><i class="fa-regular fa-file-word"></i>Word</li>
+                    </ul>
+                    <h3><i class="fa-solid fa-box-archive"></i>Documentation & Archive</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-notion"></i>Notion</li>
+                    </ul>
+                </div>
+                <div id="tab3" class="cont">
+                    <!--Projects (어떤 프로젝트를 했는지)-->
+                    <h2>Projects</h2>
+                    <p>이 자리에는 아코디언 패널이 들어갑니다. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
 </html>

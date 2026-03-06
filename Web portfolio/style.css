@@ -6,14 +6,201 @@
 }
 
 :root {
-    --main-color: #6C5CE7;
-    --main-dark: #4B3FBF;
-    --main-light: #A29BFE;
-    --pale-color: #F5F6FF;
+    --main-color: #8E7AB5;
+    /* 톤다운된 라벤더 */
+    --main-dark: #635284;
+    /* 어두운 자수정색 */
+    --main-light: #F3F0F9;
+    /* 부드러운 화이트 퍼플 */
+    --white: #F6f6f6;
     --black: #2D2D2D;
 }
 
-html, body {
+html,
+body {
     font-family: 'NanumSquareRound';
     font-size: 14pt;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.1em;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 5px;
+}
+
+h2,
+h3 {
+    color: var(--main-dark);
+}
+
+blockquote {
+    color: var(--main-color)
+}
+
+ul {
+    margin: 0;
+}
+
+.wrapper {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    font-family: inherit;
+}
+
+.tab {
+    width: 100%;
+    height: auto;
+    font-family: inherit;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 22px;
+}
+
+.tabbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+}
+
+.btn {
+    width: 110px;
+    height: 35px;
+    font-family: inherit;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn.focus {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.btn>a {
+    line-height: 2em;
+}
+
+.btn.focus>a {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.link {
+    width: 100%;
+    height: auto;
+    font-family: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    font-family: inherit;
+}
+
+i {
+    color: var(--main-dark);
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.line {
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+.main .content .cont {
+    display: none;
+    position: static;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+#tab1 {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.about {
+    width: 95%;
+}
+
+.about>p {
+    margin: 10px 5px;
+    font-size: 0.95em;
+}
+
+#about1>p>i {
+    font-size: 0.9em;
+}
+
+#about2>i {
+    font-size: 0.95em;
+}
+
+.pub-item {
+    font-size: 0.95em;
+}
+
+/* 미디어쿼뤼이이이이이아 */
+/* 이게 왜 필요하냐고요? 모바일도 고려해야됩니다 우리는... */
+@media (max-width: 768px) {
+
+    /* 모바일에서는 여백을 줄여서 시원하게! */
+    .wrapper {
+        width: 95%;
+    }
+
+    /* 1. 2단 배치를 세로로 전환 */
+    #tab1 {
+        grid-template-columns: 1fr;
+        /* 1024px 이하부터는 한 줄로 쌓기 */
+        gap: 40px;
+        /* 자기소개와 약력 사이 간격 */
+    }
+
+    /* 2. 오른쪽 약력(Education, Paper 등)의 너비를 100%로 */
+    #tab1>div {
+        width: 100% !important;
+    }
+
+    /* 3. 상단 탭 버튼 영역 처리 (아이콘이 밀릴 수 있음) */
+    .header .tab {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    /* 4. 아이콘 링크들을 아래로 빼거나 정렬 */
+    .link {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: flex-start;
+        /* 모바일에선 왼쪽 정렬 */
+    }
 }
