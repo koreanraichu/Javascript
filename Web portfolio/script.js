@@ -59,7 +59,9 @@ accordion.forEach((title) => {
     title.addEventListener('click', () => {
         // 클릭된 제목 바로 다음 요소(accordion_contents)를 타겟팅합니다.
         const content = title.nextElementSibling;
-        const icon = title.querySelector('.icon-toggle')
+        const icon = title.querySelector('.icon-toggle');
+
+        title.classList.toggle('active');
 
         // 보이고 안 보이고를 토글합니다.
         if (content.style.display === 'block') {

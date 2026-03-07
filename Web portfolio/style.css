@@ -6,29 +6,28 @@
 }
 
 :root {
-    --main-color: #8E7AB5;
-    --sub-color: #4e8075;
-    /* 톤다운된 라벤더 */
-    --main-dark: #635284;
-    --sub-dark:#354b46;
-    /* 어두운 자수정색 */
-    --main-light: #F3F0F9;
-    --sub-light: #f3f7f3;
-    /* 부드러운 화이트 퍼플 */
+    --main-color: #937cc1;
+    --sub-color: #40826d;
+    --main-dark: #5F4B8B;
+    --sub-dark:#364b44;
+    --main-light: #eeecf3;
+    --sub-light: #eff5f0;
+    --accent: #3A6EA5;
     --white: #F6f6f6;
     --black: #2D2D2D;
-    --gray: #bbbbbb;
-    --gray2: #999999;
+    --gray: #c7c7c7;
+    --gray2: #8a8a8a;
 }
 
 html,
 body {
     font-family: 'NanumSquareRound';
     font-size: 14pt;
+    letter-spacing: -0.01em;
 }
 
 body {
-    background-color: var(--white);
+    background-color: var(--main-light);
     color: var(--black);
     line-height: 1.1em;
     margin: 0;
@@ -130,11 +129,16 @@ li::before {
     align-items: center;
 }
 
+.link i {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
 .main {
     width: 100%;
     height: auto;
     padding: 5px;
     font-family: inherit;
+    margin-bottom: 25px;
 }
 
 i {
@@ -165,12 +169,13 @@ a {
 /* 개별 오브젝트를 감싸는 카드*/
 .card {
     width: 95%;
-    border: 2px solid var(--sub-dark);
+    border: 1px solid var(--sub-dark);
     border-radius: 10px;
     margin: 10px 0;
     padding: 10px;
-    background-color: var(--sub-light);
-    box-shadow: 2px 2px 2px var(--gray);
+    background-color: var(--white);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: all 0.2s ease;
 }
 
 #tab1 {
@@ -209,8 +214,13 @@ a {
     background-color: var(--main-dark);
     color: var(--main-light);
     padding: 8px;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+
+.accordion.active{
+    background-color: var(--accent);
+}
+
 .panel {
     background-color: var(--sub-light);
     color: var(--black);
@@ -285,5 +295,30 @@ a {
 
     #tab2 {
         grid-template-columns: 1fr;
+    }
+}
+
+/*여러분 그 호버도 모바일에서는 끄셔야 하는 거 아십니까 */
+@media (hover: hover) {
+    .card:hover {
+        box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+        transform: translateY(-2px);
+    }
+
+    .link i:hover {
+        color: var(--accent);
+        transform: translateY(-1px) scale(1.05);
+    }
+
+    .accordion:hover {
+        color: var(--white);
+    }
+
+    .btn:hover {
+        color: var(--accent);
+    }
+
+    .proj_link a:hover {
+        color: var(--accent);
     }
 }
