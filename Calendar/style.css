@@ -1,13 +1,14 @@
 @font-face {
-    font-family: 'CookieRun-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-family: 'HsFallThought';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSGaeulsenggak.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-display: swap;
 }
 
-body, button {
-    font-family: 'CookieRun-Regular';
-    font-size: 16pt;
+body,
+button {
+    font-family: 'HsFallThought';
+    font-size: 14pt;
 }
 
 button {
@@ -17,12 +18,12 @@ button {
 }
 
 span {
-    line-height: 1.5em;
+    line-height: 1.4em;
     font-size: 30pt;
 }
 
 i {
-    font-size: 1.8em;
+    font-size: 1.7em;
 }
 
 .caltitle {
@@ -39,7 +40,7 @@ i {
 }
 
 .wrapper {
-    width: 1400px;
+    width: 1410px;
     margin: 0 auto;
 }
 
@@ -48,12 +49,13 @@ i {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.5em;
     border-bottom: 1px solid #433D8B;
     height: 75px;
 }
 
-.day, .date{
+.day,
+.date {
     width: calc(100% / 7);
 }
 
@@ -85,7 +87,17 @@ i {
 }
 
 .today {
-    color: #50B498;
+    color: #41ad00;
+}
+
+.today::before {
+    font-size: 0.4em;
+    content: "✅";
+}
+
+.today::after {
+    font-size: 0.4em;
+    content: "✅";
 }
 
 .lunar {
