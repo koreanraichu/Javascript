@@ -133,3 +133,26 @@ button {
     color: var(--main-color);
     border: 1px double var(--sub-color);
 }
+
+/* 토스트 메시지 기본 스타일 */
+#toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s, bottom 0.3s;
+    z-index: 9999;
+    pointer-events: none; /* 클릭 방해 금지 */
+}
+
+/* 토스트가 보일 때의 상태 */
+#toast.show {
+    opacity: 1;
+    bottom: 50px;
+}

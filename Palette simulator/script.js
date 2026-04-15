@@ -40,22 +40,38 @@ color_button.addEventListener('click',()=>{
         const endRgb = hexToRgb(color2);
         const n = 10;
 
-        //자 드가자 
         for (let i = 0; i < n; i++) {
-            const step = i / (n - 1); // 0부터 1까지의 비율
+            const step = i / (n - 1);
 
-            // R, G, B 각각 보간 계산
             const r = Math.round(startRgb[0] + (endRgb[0] - startRgb[0]) * step);
             const g = Math.round(startRgb[1] + (endRgb[1] - startRgb[1]) * step);
             const b = Math.round(startRgb[2] + (endRgb[2] - startRgb[2]) * step);
 
-            // 새 div 생성 및 스타일 적용
-            const chip = document.createElement('div');
-            chip.classList.add('palette_chip'); // CSS에서 너비/높이 설정용
-            chip.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-            chip.style.flex = "1"; // 10칸이 골고루 나눠지도록
+            const toHex = (c) => c.toString(16).padStart(2, '0');
+            const hexCode = `#${toHex(r)}${toHex(g)}${toHex(b)}`.toUpperCase();
 
-            // 드디어 등장하는 오타 없는 그 녀석
+            const chip = document.createElement('div');
+            chip.classList.add('palette_chip'); 
+            chip.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+            chip.style.flex = "1";
+            
+            // 스타일 및 텍스트 설정
+            chip.style.display = "flex";
+            chip.style.alignItems = "center";
+            chip.style.justifyContent = "center";
+            chip.style.cursor = "pointer"; // 클릭 가능하다는 표시
+            chip.style.color = (r * 0.299 + g * 0.587 + b * 0.114) > 186 ? '#000' : '#fff';
+            chip.innerText = hexCode;
+
+            chip.onclick = () => {
+                navigator.clipboard.writeText(hexCode).then(() => {
+                    // alert 대신 토스트 호출!
+                    showToast(`${hexCode} copied!`);
+                }).catch(err => {
+                    console.error('복사 실패:', err);
+                });
+            };
+
             palette_div.appendChild(chip);
         }
     }
@@ -77,3 +93,21 @@ color_button.addEventListener('click',()=>{
     cmap_div_divd.style.backgroundImage = `linear-gradient(to right, ${"#" + color1}, #000000, ${"#" + color2})`; // 왼->오
     
 });
+
+// 1. 토스트 메시지 생성 함수 (한 번만 실행되도록 바깥에 배치)
+function showToast(message) {
+    let toast = document.getElementById('toast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'toast';
+        document.body.appendChild(toast);
+    }
+
+    toast.innerText = message;
+    toast.classList.add('show');
+
+    // 2초 뒤에 사라지게 설정
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 2000);
+}
