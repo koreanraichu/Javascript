@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'HsFallThought';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSGaeulsenggak.woff') format('woff');
+    font-family: 'Rimgul';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/Limgul12.woff2') format('woff2');
     font-weight: normal;
     font-display: swap;
 }
 
 body,
 button {
-    font-family: 'HsFallThought';
+    font-family: 'Rimgul';
     font-size: 14pt;
 }
 
@@ -19,11 +19,29 @@ button {
 
 span {
     line-height: 1.4em;
-    font-size: 30pt;
+    font-size: 26pt;
+}
+
+.text {
+    color: #405D72;
 }
 
 i {
     font-size: 1.7em;
+}
+
+input[type="text"] {
+    width: 125px;
+    font-family: inherit;
+    font-size: 24pt;
+    border-bottom: 1px solid #405D72;
+    border-width: 0 0 1px;
+    color: #17153b;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-bottom: 2px double #405D72;
 }
 
 .caltitle {
@@ -32,7 +50,15 @@ i {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    border-bottom: 2px double #17153B;
+}
+
+.function {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 2px double #17153b;
+    padding: 15px 0;
 }
 
 .calbody {
@@ -88,16 +114,7 @@ i {
 
 .today {
     color: #41ad00;
-}
-
-.today::before {
-    font-size: 0.4em;
-    content: "✅";
-}
-
-.today::after {
-    font-size: 0.4em;
-    content: "✅";
+    font-size: 28pt;
 }
 
 .lunar {

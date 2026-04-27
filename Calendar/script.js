@@ -323,36 +323,27 @@ function lunarCalc(year, month, day, type, leapmonth) {
 }
 
 function dayCalcDisplay(startYear, startMonth, startDay) {
-    if (!startYear || startYear == 0 ||
-        !startMonth || startMonth == 0 ||
-        !startDay || startDay == 0) {
-        alert('날짜를 입력해주세요');
-        return;
+    // 1. 넘겨받은 연, 월, 일을 바탕으로 실제 Date 객체 생성
+    // (월은 0~11이므로 -1, 일은 그대로)
+    // 예: 2025년 2월의 이전달 날짜로 '31'이 들어와도 
+    // new Date(2025, 1, 31)은 자동으로 2025년 3월 3일로 인식됩니다.
+    var tempDate = new Date(startYear, startMonth - 1, startDay);
+    
+    // 2. 보정된 진짜 연/월/일을 다시 추출
+    var realYear = tempDate.getFullYear();
+    var realMonth = tempDate.getMonth() + 1;
+    var realDay = tempDate.getDate();
+
+    // 3. (옵션) 윤년 체크 로직은 사실 lunarCalc 내부에서 수행하므로 
+    // 여기서는 범위 체크를 삭제하거나 보정된 값을 사용합니다.
+    if (realYear < 1900 || realYear > 2040) {
+        return ""; // 지원 범위 밖이면 빈칸 처리
     }
 
-    var solMonthDay = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    /* 양력/음력 변환 (보정된 진짜 날짜를 넣음) */
+    var lunar = lunarCalc(realYear, realMonth, realDay, 1);
 
-    if (startYear % 400 == 0 || (startYear % 4 == 0 && startYear % 100 != 0)) solMonthDay[1] += 1;
-
-
-    if (startMonth < 1 || startMonth > 12 ||
-        startDay < 1 || startDay > solMonthDay[startMonth - 1]) {
-        if (solMonthDay[1] == 28 && startMonth == 2 && startDay > 28)
-            console.log("윤년이 아닙니다. 다시 입력해주세요");
-        else
-            console.log("날짜 범위를 벗어났습니다. 다시 입력해주세요");
-            //이거 2025년 1월로 넘기니까 뜨던데 뭐가 문제인건지 모르겠음... 2025년 2월로 넘어가니까 윤년이 아니라고 떠요... 
-            //일단 출력 형식 변경합니다. 
-        return;
-    }
-
-    var startDate = new Date(startYear, startMonth - 1, startDay);
-
-    /* 양력/음력 변환 */
-    var date = lunarCalc(startYear, startMonth, startDay, 1);
-
-    return (date.leapMonth ? "윤" : "") + date.month +"."+
-        date.day;
+    return (lunar.leapMonth ? "윤" : "") + lunar.month + "." + lunar.day;
 }
 
 const renderCalendar = () => {
@@ -420,6 +411,8 @@ const nextMonth = () => {
 
 let prevMonth_button = document.querySelector('#prev');
 let nextMonth_button = document.querySelector('#next');
+let goTodayButton = document.querySelector('#gotoday');
+let goDateButton = document.querySelector('#godate');
 
 prevMonth_button.addEventListener('click', (e) => {
     prevMonth();
@@ -428,5 +421,36 @@ prevMonth_button.addEventListener('click', (e) => {
 nextMonth_button.addEventListener('click', (e) => {
     nextMonth();
 })
+
+// 오늘 날짜로 고고싱하는 버튼 
+goTodayButton.addEventListener('click', (e) => {
+    // 1. 전역 변수인 'date'를 현재 시점의 날짜로 갱신
+    date = new Date(); 
+
+    // 2. 갱신된 date 객체를 바탕으로 달력을 다시 그림
+    renderCalendar();
+});
+
+// 특정 날짜로 고고싱하는 버튼
+goDateButton.addEventListener('click', (e) => {
+    let goYear = document.querySelector('#goyear').value;
+    let goMonth = document.querySelector('#gomonth').value;
+
+    // 1. 입력값이 있는지 확인 (비어있으면 동작 안 함)
+    if (goYear && goMonth) {
+        // 2. 전역 변수인 date 객체의 연도와 월을 업데이트
+        // 숫자로 형변환(Number)해주고, 월은 반드시 -1을 해줍니다.
+        date.setFullYear(Number(goYear));
+        date.setMonth(Number(goMonth) - 1);
+        
+        // 날짜가 해당 월의 마지막 날을 넘어가는 버그를 방지하기 위해 1일로 세팅하는 것이 안전합니다.
+        date.setDate(1);
+
+        // 3. 갱신된 정보를 바탕으로 달력 다시 그리기
+        renderCalendar();
+    } else {
+        alert("이동할 연도와 월을 모두 입력해주세요!");
+    }
+});
 
 renderCalendar();
