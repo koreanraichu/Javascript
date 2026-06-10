@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'Ownglyph_corncorn-Rg';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Editor fonts */
 @font-face {
     font-family: 'SchoolSafetyColoredPencil';
@@ -42,8 +35,8 @@
 }
 
 @font-face {
-    font-family: 'StoryBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2512-1@1.0/IyagiGGC.woff') format('woff');
+    font-family: 'MoonHalo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/dalmoori.woff') format('woff');
     font-weight: normal;
     font-display: swap;
 }
@@ -82,20 +75,41 @@
     font-weight: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Seogung';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/Suhgung12.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tangba';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/Tangba12.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MunmakchoByeolban';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2604-1@1.0/MUNMAK_BYEOLBANCHE.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
 /* End */
 
 :root {
-    --main-color: #1e295a;
-    --sub-color: #833500;
-    --sub2-color: #F18F01;
-    --pale-color: #F5ECD7;
+    --main-color: #4F252E;
+    --sub-color: #996000;
+    --sub2-color: #C1EBE9;
+    --pale-color: #FFF7C5;
     --black: #353535;
     --gray: #999999;
     --white: #ffffff;
 }
 
 html {
-    font-family: 'Ownglyph_corncorn-Rg';
+    font-family: 'Pretendard-Regular';
     margin: 0;
     padding: 0;
 }
@@ -104,6 +118,8 @@ body {
     font-size: 13pt;
     color: var(--main-color);
     background: linear-gradient(135deg, var(--pale-color), var(--white));
+    height: 100%;
+    overflow:hidden;
 }
 
 

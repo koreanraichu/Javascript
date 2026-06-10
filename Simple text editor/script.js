@@ -105,48 +105,56 @@ broom.addEventListener('click', () => {
 //글꼴 목록은 여기 다 있습니다. 
 fontSelection.addEventListener('click',()=>{
     if (fontSelection.selectedIndex == 0) {
-        fontSelection.style.fontFamily = 'Ownglyph_corncorn-Rg';
-        textTitle.style.fontFamily = 'Ownglyph_corncorn-Rg';
-        textArea.style.fontFamily = 'Ownglyph_corncorn-Rg';
-    }else if (fontSelection.selectedIndex == 1) {
         fontSelection.style.fontFamily = 'Pretendard-Regular';
         textTitle.style.fontFamily = 'Pretendard-Regular';
         textArea.style.fontFamily = 'Pretendard-Regular';
-    } else if (fontSelection.selectedIndex == 2) {
+    } else if (fontSelection.selectedIndex == 1) {
         fontSelection.style.fontFamily = 'RIDIBatang';
         textTitle.style.fontFamily = 'RIDIBatang';
         textArea.style.fontFamily = 'RIDIBatang';
-    } else if (fontSelection.selectedIndex == 3) {
+    } else if (fontSelection.selectedIndex == 2) {
         fontSelection.style.fontFamily = 'Xcu';
         textTitle.style.fontFamily = 'Xcu';
         textArea.style.fontFamily = 'Xcu';
-    } else if (fontSelection.selectedIndex == 4) {
+    } else if (fontSelection.selectedIndex == 3) {
         fontSelection.style.fontFamily = 'MabinogiClassicR';
         textTitle.style.fontFamily = 'MabinogiClassicR';
         textArea.style.fontFamily = 'MabinogiClassicR';
+    } else if (fontSelection.selectedIndex == 4) {
+        fontSelection.style.fontFamily = 'MoonHalo';
+        textTitle.style.fontFamily = 'MoonHalo';
+        textArea.style.fontFamily = 'MoonHalo';
     } else if (fontSelection.selectedIndex == 5) {
-        fontSelection.style.fontFamily = 'StoryBold';
-        textTitle.style.fontFamily = 'StoryBold';
-        textArea.style.fontFamily = 'StoryBold';
-    } else if (fontSelection.selectedIndex == 6) {
         fontSelection.style.fontFamily = 'BelovedMyoeunttobak';
         textTitle.style.fontFamily = 'BelovedMyoeunttobak';
         textArea.style.fontFamily = 'BelovedMyoeunttobak';
-    } else if (fontSelection.selectedIndex == 7) {
+    } else if (fontSelection.selectedIndex == 6) {
         fontSelection.style.fontFamily = 'NostalgicPoliceFairness';
         textTitle.style.fontFamily = 'NostalgicPoliceFairness';
         textArea.style.fontFamily = 'NostalgicPoliceFairness';
-    } else if (fontSelection.selectedIndex == 8) {
+    } else if (fontSelection.selectedIndex == 7) {
         fontSelection.style.fontFamily = 'NostalgicGellyRoll';
         textTitle.style.fontFamily = 'NostalgicGellyRoll';
         textArea.style.fontFamily = 'NostalgicGellyRoll';
-    } else if (fontSelection.selectedIndex == 9) {
+    } else if (fontSelection.selectedIndex == 8) {
         fontSelection.style.fontFamily = 'Rimgul';
         textTitle.style.fontFamily = 'Rimgul';
         textArea.style.fontFamily = 'Rimgul';
-    } else if (fontSelection.selectedIndex == 10) {
+    } else if (fontSelection.selectedIndex == 9) {
         fontSelection.style.fontFamily = 'Umdot';
         textTitle.style.fontFamily = 'Umdot';
         textArea.style.fontFamily = 'Umdot';
+    } else if (fontSelection.selectedIndex == 10) {
+        fontSelection.style.fontFamily = 'Seogung';
+        textTitle.style.fontFamily = 'Seogung';
+        textArea.style.fontFamily = 'Seogung';
+    } else if (fontSelection.selectedIndex == 11) {
+        fontSelection.style.fontFamily = 'Tangba';
+        textTitle.style.fontFamily = 'Tangba';
+        textArea.style.fontFamily = 'Tangba';
+    } else if (fontSelection.selectedIndex == 12) {
+        fontSelection.style.fontFamily = 'MunmakchoByeolban';
+        textTitle.style.fontFamily = 'MunmakchoByeolban';
+        textArea.style.fontFamily = 'MunmakchoByeolban';
     } 
 });
