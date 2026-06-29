@@ -12,6 +12,7 @@ const broom = document.querySelector('#broom'); // 줄바꿈 나가주세요
 const Copied = document.querySelector('.copied');
 const Broomed = document.querySelector('.broomed');
 
+// 오픈
 fileOpen.addEventListener('change',(e)=>{
     const file = e.target.files[0]; //너도 배열이냐?
     if (!file) return; 
@@ -27,6 +28,7 @@ fileOpen.addEventListener('change',(e)=>{
     reader.readAsText(file, 'utf-8');
 })
 
+// 다운로드(저장)
 textSave.addEventListener('click',()=>{
     const blob = new Blob([textArea.value], {type:'text/plain'});
     const url = window.URL.createObjectURL(blob);
@@ -52,10 +54,12 @@ textSave.addEventListener('click',()=>{
     }, 100);
 })
 
+// 글자수 셔주는거
 textArea.addEventListener('keyup',()=>{
     count.innerText = textArea.value.length;
 });
 
+// 복사
 textCopy.addEventListener('click',()=>{
     window.navigator.clipboard.writeText(textArea.value);
     Copied.style.top = "1%";
@@ -64,11 +68,14 @@ textCopy.addEventListener('click',()=>{
     }, 500)
 })
 
+// 내용만 비워주는거 
 reset.addEventListener('click',()=>{
     textTitle.value = '';
     textArea.value = '';
+    count.innerText = '0';
 });
 
+// 줄바꿈 정리 
 broom.addEventListener('click', () => {
     let lines = textArea.value.replace(/\r\n/g, '\n').split('\n');
 
