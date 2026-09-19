@@ -1,0 +1,85 @@
+@import url('https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/mona.css');
+
+:root {
+    --main-color: #413333;
+    --sub-color: #315B8C;
+    --sub-color2: #F2765E;
+    --pale-color: #F5EBDD;
+    --black: #101010;
+    --white: #f9f9f9;
+}
+
+html, body {
+    font-family: 'Mona12';
+    font-size: 13pt;
+    background-color: var(--white);
+    color: var(--main-color);
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    font-family: inherit;
+    font-size: 13pt;
+    width: 185px;
+    height: 35px;
+    background-color: var(--pale-color);
+    color: var(--sub-color);
+    border: 1px solid var(--sub-color2);
+    border-radius: 5px;
+}
+
+.chicken_brand, .chicken_result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chicken_list {
+    display: none;
+    /* display: grid; */
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 15px;
+    margin-bottom: 15px;
+}
+
+label {
+    width: 240px;
+    height: 36px;
+    font-size: 0.98em;
+    line-height: 1.5;
+}
+
+.selected_chicken {
+    font-size: 35pt;
+    margin: 0;
+    padding: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* 1. 체크 안 됐을 때 (기본 상태): 빈 접시 🍽️ */
+label::before {
+    content: '🍽️ ';
+    cursor: pointer;
+    margin-right: 10px
+}
+
+/* 2. 체크됐을 때: 치킨 🍗 */
+label:has(input[type="checkbox"]:checked)::before {
+    content: '🍗 ';
+    margin-right: 10px
+}
