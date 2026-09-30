@@ -1,12 +1,5 @@
 /* Editor fonts */
 @font-face {
-    font-family: 'AyoungSYearning2019Handwriting';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161334@2019/2019/Griun_AhyoungsHandwriteIn2019-Rg.woff2') format('woff2');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
@@ -14,10 +7,31 @@
 }
 
 @font-face {
+    font-family: 'NexonMaplestory';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NexonMaplestory';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'RIDIBatang';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'SeochoBatang';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2608211044@seochobatang-regular/seochobatang-regular/SeochoBatang-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
@@ -63,13 +77,6 @@
 }
 
 @font-face {
-    font-family: 'GeuriunOmiriHandwriting';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161334@griun-omiri-rg/griun-omiri-rg/Griun_OMIRI-Rg.woff2') format('woff2');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'NostalgicGellyRoll';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_Gellyroll-Rg.woff2') format('woff2');
     font-weight: normal;
@@ -77,8 +84,15 @@
 }
 
 @font-face {
-    font-family: 'NostalgicDoojundoojun';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161334@griun-dujundujun-rg/griun-dujundujun-rg/Griun_DUJUNDUJUN-Rg.woff2') format('woff2');
+    font-family: 'NostalgicPopcorn';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2609271946@griun-popcorn-rg/griun-popcorn-rg/Griun_Popcorn-Rg.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NostalgicDolce';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2609271756@griun-dolce-rg/griun-dolce-rg/Griun_Dolce-Rg.woff2') format('woff2');
     font-weight: 400;
     font-display: swap;
 }
@@ -112,25 +126,33 @@
 }
 
 @font-face {
-    font-family: 'PyeongchangWologae';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607151510@regular/regular/평창월오개체 Regular.woff2') format('woff2');
+    font-family: 'ThinMulmaru';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161321@thinmulmaru/thinmulmaru/ThinMulmaru.woff2') format('woff2');
     font-weight: 400;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'ThinMulmaru';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161321@thinmulmaru/thinmulmaru/ThinMulmaru Mono.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
 /* End */
 
 :root {
-    --main-color: #4F252E;
-    --sub-color: #996000;
-    --sub2-color: #C1EBE9;
-    --pale-color: #FFF7C5;
+    --main-color: #516C67;
+    --sub-color: #9B627E;
+    --sub2-color: #DFB773;
+    --pale-color: #E3DBD7;
     --black: #353535;
     --gray: #999999;
     --white: #ffffff;
 }
 
 html {
-    font-family: 'AyoungSYearning2019Handwriting';
+    font-family: 'Pretendard-Regular';
     margin: 0;
     padding: 0;
 }
@@ -249,6 +271,12 @@ button {
     background-color: var(--sub2-color);
     border-radius: 5px;
     box-shadow: 2px 2px 2px var(--gray);
+    transition: all .2s;
+}
+
+button:hover {
+    color: var(--sub-color);
+    border: 1px solid var(--sub-color);
 }
 
 button > i {
