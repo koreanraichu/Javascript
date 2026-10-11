@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'NostalgicPopcorn';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2609271946@griun-popcorn-rg/griun-popcorn-rg/Griun_Popcorn-Rg.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+:root {
+    --main-color: #0B4F6C;
+    --sub-color: #A31621;
+    --sub-color2: #729EA1;
+    --pale-color: #FFEFD3;
+    --black: #000505;
+    --white: #FEFCFD;
+}
+
+html,
+body {
+    font-family: 'NostalgicPopcorn';
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    font-size: 14pt;
+}
+
+h1, h2, p {
+    margin: 10px 0;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    font-size: 0.98em;
+    display: none;
+}
+
+.checkbox {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-family: inherit;
+    width: 150px;
+    height: 35px;
+    background-color: var(--pale-color);
+    border: 1px solid var(--sub-color);
+    color: var(--sub-color);
+    font-size: 1.1em;
+    margin: 20px;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.result h3 {
+    color: var(--main-color);
+}
+
+.badge-container {
+    color: var(--sub-color2);
+}
+
+.sub-label {
+    color: var(--sub-color);
+}
+
+.type-badge {
+    margin-right: 5px;
+
+}
+/* 강조 스타일 (4배 & 0.25배) */
+.badge-x4 {
+    background-color: #ffe6e6;
+    border-color: #ff4d4d;
+    color: #cc0000;
+    box-shadow: 0 0 3px rgba(255, 0, 0, 0.3);
+    /* 살짝 빛나는 효과로 강조 */
+}
+
+.badge-x025 {
+    background-color: #e6f7ff;
+    border-color: #33bbff;
+    color: #006699;
+    box-shadow: 0 0 3px rgba(0, 153, 255, 0.3);
+    /* 이중 반감도 눈에 띄게 강조 */
+}
+
+/* 1. 체크 안 됐을 때 (기본 상태): 빈 접시 🍽️ */
+label::before {
+    content: '🟩 ';
+    cursor: pointer;
+}
+
+/* 2. 체크됐을 때: 치킨 🍗 */
+label:has(input[type="checkbox"]:checked)::before {
+    content: '✅ ';
+}
+
+/*모바일에서는 3*6으로 나옵니다*/
+@media screen and (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    .checkbox {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

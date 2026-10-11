@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Pokemon type calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>타입상성 계산기</h1>
+        <h2>얘 뭘로 때려야 효과가 직방일까? </h2>
+        <p>상성을 알고 싶은 포켓몬의 타입을 선택하시면 방어상성을 알려드립니다. <b>해당 상성 계산기는 9세대 SV, ZA 기준으로 작성되었습니다.</b> </p>
+        <p>사용법: 포켓몬의 타입을 체크박스에서 두개까지 눌러주세요. </p>
+        <h3>포켓몬 타입</h3>
+        <div class="checkbox">
+            <!-- 지옥의 체크박스 구간 서타터-->
+            <label class="type-item">
+                <input type="checkbox" name="type" value="normal">
+                <span>노말</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="fire">
+                <span>불꽃</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="water">
+                <span>물</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="grass">
+                <span>풀</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="electric">
+                <span>전기</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="ice">
+                <span>얼음</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="fighting">
+                <span>격투</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="poison">
+                <span>독</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="ground">
+                <span>땅</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="flying">
+                <span>비행</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="psychic">
+                <span>에스퍼</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="bug">
+                <span>벌레</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="rock">
+                <span>바위</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="ghost">
+                <span>고스트</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="dragon">
+                <span>드래곤</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="dark">
+                <span>악</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="steel">
+                <span>강철</span>
+            </label>
+            <label class="type-item">
+                <input type="checkbox" name="type" value="fairy">
+                <span>페어리</span>
+            </label>
+        </div>
+        <div class="button">
+            <button id="calculate">상성 보기</button>
+            <button id="delete">선택 초기화</button>
+        </div>
+        <div class="result">
+            <!-- 상성이 여기 표시됩니다 -->
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
